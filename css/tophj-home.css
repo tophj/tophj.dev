@@ -1,0 +1,28 @@
+/*
+ * Base
+ */
+html, body{
+	height: 100%;
+	background-color: #222;
+	text-align: center;
+	color: #fff;
+	margin: 0px;
+}
+/*
+ * h1
+ */
+h1{
+	font: 22px sans-serif;
+	color: #fff;
+	text-align: center;
+	margin:0px;
+	display:inline-block;
+	width:200px;
+}
+.main-div{
+	padding-top:35%;
+	width:100%;
+}
+.here{
+	color:#e74c3c;
+}
