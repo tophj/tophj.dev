@@ -8,7 +8,7 @@ $(document).ready(function(){
 		});
 	}).mouseleave(function(e){
 		$("h1").fadeOut(1000, function(){
-			$("h1").html("Nothing to see <span class=\"here\">here<span>");
+			$("h1").html("Nothing to see <span class=\"here\">here</span>");
 			$("h1").fadeIn(1000);
 		});
 	});
