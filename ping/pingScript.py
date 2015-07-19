@@ -37,7 +37,7 @@ def ping():
 	terminal = open("ping.txt", "r")
 	for line in terminal:
 		if(len(line) > 2):			
-			pingLag = "stddev = "
+			pingLag = "mdev = "
 			result = line.find(pingLag)
 			if(result != -1):
 				result = re.findall(r'\d+', line)

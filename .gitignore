@@ -1,3 +1,4 @@
 *.pyc
 ping/hostName.py
 ping/ping.txt
+node_modules/*
