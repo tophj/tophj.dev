@@ -20,10 +20,12 @@ app.get('/', function(req,res){
 * Routes
 */
 
-// creates routes for the admin section
+// get an instance of the express router
+ var router = express.Router();
 
-// get an instance of the router
-// var adminRouter = express.Router();
+ router.get('/ping', function (req, res) {
+  res.sendFile(path.join(__dirname + '/html/ping.html'));
+});
 
 // // Router middleware, used to check before calls
 // adminRouter.use(function(req, res){
@@ -36,29 +38,8 @@ app.get('/', function(req,res){
 // });
 
 
-// // route with parameters @localhost:1337/admin/users/:name
-// adminRouter.get('/users/:name', function(req, res){
-// 	res.send('hello ' + req.params.name + '!');
-// });
-
-
-// // admin main page @ localhost:port/admin
-// adminRouter.get('/', function(req, res){
-// 	res.send('I am the dashboard!');
-// });
-
-// // users page @ localhost:port/admin/users
-// adminRouter.get('/users', function(req, res){
-// 	res.send('Users page!');
-// });
-
-// // posts pages? @ localhost:port/admin/posts
-// adminRouter.get('posts', function(req, res){
-// 	res.send('I show all the posts!');
-// });
-
 // apply the routes to our application
-//app.use('/admin', adminRouter);
+app.use('/', router);
 
 /*
 * End Routes

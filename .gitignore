@@ -1,0 +1,3 @@
+*.pyc
+ping/pingScript.py
+ping/ping.txt
