@@ -31,6 +31,7 @@ def ping():
 	#get the current date as well
 	startDate = datetime.date.today()
 	data["date"] = str(startDate)
+	createdAt = datetime.isoformat()
 
 	#call one ping, get the results and return the dictionary. ping is using windows switches
 	response = os.system("ping -c 1 " + hostname + " > ping.txt")
@@ -46,6 +47,7 @@ def ping():
 					terminal.close()
 					return data
 	data["ping"] = -1
+	data["createdAt"] = createdAt
 	terminal.close()
 	return data
 
