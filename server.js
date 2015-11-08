@@ -14,7 +14,7 @@ app.use('/js', express.static(__dirname + '/js'));
 
 //add favicon
 
-app.use(express.favicon(__dirname + '/public/favicon.ico')); 
+app.use(favicon(__dirname + '/public/favicon.ico'));
 // send our index.html file to the user for the home page
 app.get('/', function(req,res){
 	res.sendFile(path.join(__dirname + '/index.html'));
