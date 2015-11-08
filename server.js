@@ -10,6 +10,9 @@ var mongoose = require('mongoose');
 app.use('/css', express.static(__dirname + '/css'));
 app.use('/js', express.static(__dirname + '/js'));
 
+//add favicon
+app.use(express.favicon('favicon.ico')); 
+
 // send our index.html file to the user for the home page
 app.get('/', function(req,res){
 	res.sendFile(path.join(__dirname + '/index.html'));

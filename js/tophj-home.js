@@ -20,18 +20,18 @@ $(document).ready(function(){
 		});
 	}).mouseleave(function(e){
 		$(this).fadeOut(1000, function(){
-			$(this).html("<span id=\"work-years\">(2015-)</span>IBM");
+			$(this).html("IBM<span id=\"red\"> (2015-)</span>");
 			$(this).fadeIn(1000);
 		});
 	});
 	$("#Battelle").mouseenter(function(e){
 		$(this).fadeOut(1000, function(){
-			$(this).html("<span class=\"red\">Software Engineer - Cyber</span>");
+			$(this).html("<span class=\"red\">Software Engineer- Cyber</span>");
 			$(this).fadeIn(1000);
 		});
 	}).mouseleave(function(e){
 		$(this).fadeOut(1000, function(){
-			$(this).html("<span id=\"work-years\">(2013,2014)</span> Battelle");
+			$(this).html("Battelle<span id=\"red\"> (2013,2014)</span>");
 			$(this).fadeIn(1000);
 		});
 	});
@@ -42,7 +42,7 @@ $(document).ready(function(){
 		});
 	}).mouseleave(function(e){
 		$(this).fadeOut(1000, function(){
-			$(this).html("<span id=\"work-years\">(2012)</span> University of Virginia");
+			$(this).html("University of Virginia<span id=\"red\"> (2012)</span>");
 			$(this).fadeIn(1000);
 		});
 	});

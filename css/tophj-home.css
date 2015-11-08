@@ -3,13 +3,16 @@
  */
 html, body{
 	height: 100%;
+	width:99%;
 	background-color: #222;
 	text-align: center;
 	color: #fff;
 	margin: 0px;
+
 }
+
 /*
- * h1
+ * Headers
  */
 h1{
 	font: 22px sans-serif;
@@ -17,7 +20,6 @@ h1{
 	text-align: center;
 	margin:0px;
 	display:inline-block;
-	width:200px;
 }
 h2{
 	font: 21px sans-serif;
@@ -25,8 +27,6 @@ h2{
 	text-align: center;
 	margin:0px;
 	display:inline-block;
-	width:200px;
-
 }
 a{
 	color: #fff;
@@ -38,10 +38,13 @@ a:hover {
 a:visited, a:active{
 	text-decoration: none;
 }
+
+/*
+ * Body
+ */
 .main-div{
+	padding:0px;
 	padding-top:10%;
-	/*padding-bottom:2%;*/
-	width:100%;
 }
 .red,#red{
 	color:#e74c3c;
