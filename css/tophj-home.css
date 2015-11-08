@@ -19,10 +19,53 @@ h1{
 	display:inline-block;
 	width:200px;
 }
+h2{
+	font: 21px sans-serif;
+	color: #fff;
+	text-align: center;
+	margin:0px;
+	display:inline-block;
+	width:200px;
+
+}
+a{
+	color: #fff;
+}
+a:hover {
+  color:#e74c3c;
+  text-decoration: none;
+}
+a:visited, a:active{
+	text-decoration: none;
+}
 .main-div{
-	padding-top:35%;
+	padding-top:10%;
+	/*padding-bottom:2%;*/
 	width:100%;
 }
-.here{
+.red,#red{
 	color:#e74c3c;
+}
+.fluid-container{
+	padding-top:13%;
+}
+#work-links-container{
+	padding-right:5%;
+	padding-left:25%;
+	text-align: right;
+}
+#personal-projects-container{
+	padding-left:5%;
+	padding-right:25%;
+	text-align: left;
+}
+#link-title{
+	padding-bottom: 7%;
+	text-align: center;
+}
+#work-years{
+	float:left;
+}
+.other-links-container{
+	padding-top:10%;
 }
