@@ -15,7 +15,7 @@ $(document).ready(function(){
 	// ---------  work links----------
 	$("#IBM").mouseenter(function(e){
 		$(this).fadeOut(1000, function(){
-			$(this).html("<span class=\"red\">Software Engineer - Docker</span>");
+			$(this).html("<span class=\"red\">Software Developer - Docker</span>");
 			$(this).fadeIn(1000);
 		});
 	}).mouseleave(function(e){
@@ -26,7 +26,7 @@ $(document).ready(function(){
 	});
 	$("#Battelle").mouseenter(function(e){
 		$(this).fadeOut(1000, function(){
-			$(this).html("<span class=\"red\">Software Engineer- Cyber</span>");
+			$(this).html("<span class=\"red\">Software Developer - Cyber</span>");
 			$(this).fadeIn(1000);
 		});
 	}).mouseleave(function(e){
@@ -37,7 +37,7 @@ $(document).ready(function(){
 	});
 	$("#UVA").mouseenter(function(e){
 		$(this).fadeOut(1000, function(){
-			$(this).html("<span class=\"red\">Software Engineer - Chemistry Labs</span>");
+			$(this).html("<span class=\"red\">Software Developer - Chemistry Labs</span>");
 			$(this).fadeIn(1000);
 		});
 	}).mouseleave(function(e){
