@@ -2,9 +2,9 @@
 var express = require('express'),
 	app = express();
 var path = require('path');
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
 var favicon = require('serve-favicon');
-var bson = require('../browser_build/bson');
+//var bson = require('../browser_build/bson');
 
 // mongoose.connect('mongodb://localhost/db_name');
 
