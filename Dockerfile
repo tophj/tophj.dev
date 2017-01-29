@@ -15,7 +15,10 @@ RUN git clone https://github.com/tophj/tophj.us \
 	&& git checkout dev \
 	&& cp nginx/default /etc/nginx/sites-enabled/default
 
-# start the server
-RUN cd tophj.us \
-	&& nodejs server.js
+EXPOSE 3000
+WORKDIR tophj.us
+RUN nginx
+
+# start the server and queue container multi-process hate
+ENTRYPOINT ["nodejs", "server.js"]
 

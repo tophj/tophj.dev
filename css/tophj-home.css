@@ -53,9 +53,7 @@ a:visited, a:active{
 	padding-top:13%;
 }
 #work-links-container{
-	padding-right:5%;
-	padding-left:25%;
-	text-align: left;
+	text-align: right;
 }
 #link-title{
 	padding-bottom: 7%;
@@ -66,5 +64,5 @@ a:visited, a:active{
 }
 .other-links-container{
 	padding-top:10%;
-	text-align: left;
+	text-align: right;
 }
