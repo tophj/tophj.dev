@@ -6,16 +6,16 @@ RUN apt-get update && apt-get install -y git \
 	npm
 
 # install npm dependencies
-RUN npm install express
-RUN npm install mongoose
+RUN npm install express \
+	serve-favicon
 
 # pull down repo and replace nginx html with my html
 RUN git clone https://github.com/tophj/tophj.us \
 	&& cd tophj.us \
-	&& cp nginx/default /etc/nginx/sites-enabled/default \
-	&& nginx -s reload
+	&& git checkout dev \
+	&& cp nginx/default /etc/nginx/sites-enabled/default
 
 # start the server
 RUN cd tophj.us \
-	&& node server.js
+	&& nodejs server.js
 
