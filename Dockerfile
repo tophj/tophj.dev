@@ -1,6 +1,13 @@
+# to build
+# docker build -t tophj-us -f Dockerfile .
+#
+# docker run -d -p 3000:3000 tophj-us
+
+
 FROM ubuntu:16.04
 
-RUN apt-get update && apt-get install -y git \
+RUN apt-get update && apt-get install -y \
+	git \
 	nginx \
 	nodejs \
 	npm
