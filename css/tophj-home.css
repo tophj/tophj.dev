@@ -59,6 +59,7 @@ a:visited, a:active{
 	float:left;
 }
 #other-links-container{
-	padding-top:10%;
+	position: absolute;
+	bottom: 0;
 	text-align: left;
 }
