@@ -1,5 +1,5 @@
 {
-  "name": "dota-2-node",
+  "name": "tophj.us",
   "main": "server.js",
   "version": "1.0.0",
   "description": "Pings the steam api every couple of minutes.",
