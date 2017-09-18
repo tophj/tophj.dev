@@ -55,14 +55,10 @@ a:visited, a:active{
 #work-links-container{
 	text-align: right;
 }
-#link-title{
-	padding-bottom: 7%;
-	text-align: center;
-}
 #work-years{
 	float:left;
 }
-.other-links-container{
+#other-links-container{
 	padding-top:10%;
-	text-align: right;
+	text-align: left;
 }
