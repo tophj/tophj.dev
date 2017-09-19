@@ -22,11 +22,11 @@ RUN npm install express \
 #	&& git checkout dev \
 #	&& cp nginx/default /etc/nginx/sites-enabled/default
 
-COPY . /
+COPY . /tophj.us
 COPY nginx/default /etc/nginx/sites-enabled/default
 
 EXPOSE 3000
-WORKDIR tophj.us
+WORKDIR /tophj.us
 RUN nginx
 
 # start the server and queue container multi-process hate
