@@ -17,10 +17,13 @@ RUN npm install express \
 	serve-favicon
 
 # pull down repo and replace nginx html with my html
-RUN git clone https://github.com/tophj/tophj.us \
-	&& cd tophj.us \
-	&& git checkout dev \
-	&& cp nginx/default /etc/nginx/sites-enabled/default
+#RUN git clone https://github.com/tophj/tophj.us \
+#	&& cd tophj.us \
+#	&& git checkout dev \
+#	&& cp nginx/default /etc/nginx/sites-enabled/default
+
+COPY . /
+COPY nginx/default /etc/nginx/sites-enabled/default
 
 EXPOSE 3000
 WORKDIR tophj.us
