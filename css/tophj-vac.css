@@ -1,0 +1,20 @@
+html, body{
+	height: 100%;
+	width:99%;
+        background-color: #222;
+	color: #fff;
+}
+
+#loading{
+
+	font: 30px sans-serif;
+	color: #fff;
+	text-align: center;
+}
+
+#timer{
+	font: 30px sans-serif;
+	color:#e74c3c;
+	text-align: center;
+	padding-top: 20%;
+}

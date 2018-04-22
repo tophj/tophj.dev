@@ -2,10 +2,6 @@
 var express = require('express'),
 	app = express();
 var path = require('path');
-//var mongoose = require('mongoose');
-//var bson = require('../browser_build/bson');
-
-// mongoose.connect('mongodb://localhost/db_name');
 
 //add the css and js folders
 app.use('/css', express.static(__dirname + '/css'));
@@ -25,20 +21,9 @@ app.get('/', function(req,res){
 // get an instance of the express router
  var router = express.Router();
 
- router.get('/ping', function (req, res) {
-  res.sendFile(path.join(__dirname + '/html/ping.html'));
+ router.get('/vacation', function (req, res) {
+  res.sendFile(path.join(__dirname + 'html/vacation.html'));
 });
-
-// // Router middleware, used to check before calls
-// adminRouter.use(function(req, res){
-
-// 	// log each request to the console
-// 	console.log(req.methood, req.url);
-
-// 	// continue doing what we were doing and go into route
-// 	next();
-// });
-
 
 // apply the routes to our application
 app.use('/', router);
