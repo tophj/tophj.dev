@@ -22,7 +22,7 @@ app.get('/', function(req,res){
  var router = express.Router();
 
  router.get('/vacation', function (req, res) {
-  res.sendFile(path.join(__dirname + 'html/vacation.html'));
+  res.sendFile(__dirname + '/html/vacation.html');
 });
 
 // apply the routes to our application
