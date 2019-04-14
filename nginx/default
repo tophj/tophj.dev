@@ -1,12 +1,12 @@
 server{
         listen 80;
-        server_name tophj.us;
+        server_name tophj.dev;
         location / {
                 proxy_set_header X-Real_Ip $remote_addr;
                 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
                 proxy_set_header Host $host;
                 proxy_set_header X-NginX-Proxy true;
                 proxy_pass http://127.0.0.1:3000;
-                proxy_redirect http://127.0.0.1:3000/ https://tophj.us/;
+                proxy_redirect http://127.0.0.1:3000/ https://tophj.dev/;
 	}        
 }
