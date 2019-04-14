@@ -15,10 +15,14 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  var milliseconds = Math.floor((distance % (1000 * 60)) - (1000 * seconds));
+ 
+  if(milliseconds < 100) {
+	milliseconds = "0" + milliseconds;
+}
 
-  
   document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  + minutes + "m " + seconds + "." + milliseconds + "s ";
   document.getElementById("loading").innerHTML = "left until beaches!!!";
 
   // If the count down is finished, write some text 
@@ -26,4 +30,4 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("timer").innerHTML = "VACATION (or probably that you haven't set it to next year)";
   }
-}, 1000);
+}, 1);
