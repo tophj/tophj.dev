@@ -1,15 +1,9 @@
 {
-  "name": "tophj.us",
+  "name": "tophj.dev",
   "main": "server.js",
-  "version": "1.0.0",
-  "description": "Pings the steam api every couple of minutes.",
+  "version": "2.0.0",
+  "description": "Basic website stuff.",
   "dependencies": {
-  	"express" : "~4.8.6",
-    "mongoose" : "~3.8.19"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  	"express" : "~4.8.6"
+  }
 }

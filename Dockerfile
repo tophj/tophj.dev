@@ -1,7 +1,7 @@
 # to build
-# docker build -t tophj-us -f Dockerfile .
+# docker build -t tophj-dev -f Dockerfile .
 #
-# docker run -d -p 3000:3000 tophj-us
+# docker run -d -p 3000:3000 tophj-dev
 
 
 FROM ubuntu:16.04
@@ -16,17 +16,11 @@ RUN apt-get update && apt-get install -y \
 RUN npm install express \
 	serve-favicon
 
-# pull down repo and replace nginx html with my html
-#RUN git clone https://github.com/tophj/tophj.us \
-#	&& cd tophj.us \
-#	&& git checkout dev \
-#	&& cp nginx/default /etc/nginx/sites-enabled/default
-
-COPY . /tophj.us
+COPY . /tophj.dev
 COPY nginx/default /etc/nginx/sites-enabled/default
 
 EXPOSE 3000
-WORKDIR /tophj.us
+WORKDIR /tophj.dev
 RUN nginx
 
 # start the server and queue container multi-process hate
