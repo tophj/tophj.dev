@@ -1,9 +1,0 @@
-{
-  "name": "tophj.dev",
-  "main": "server.js",
-  "version": "2.0.0",
-  "description": "Basic website stuff.",
-  "dependencies": {
-  	"express" : "~4.8.6"
-  }
-}
