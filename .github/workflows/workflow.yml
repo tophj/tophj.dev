@@ -1,4 +1,4 @@
-name: docker build CI
+name: CI
 
 on:
   push:
@@ -8,9 +8,15 @@ on:
 
 jobs:
   build:
+    name: Build, run, and test.
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: checkout workspace
+      uses: actions/checkout@v2
+
     - name: Build docker image
       run: make build
+
+    - name: Run docker image
+      run: make run
